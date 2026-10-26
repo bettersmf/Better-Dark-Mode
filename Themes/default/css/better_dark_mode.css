@@ -1,0 +1,639 @@
+
+html[data-better-dark-mode="dark"] {
+	color-scheme: dark;
+	--bdm-bg:#0f1419;
+	--bdm-surface:#171d23;
+	--bdm-surface-2:#1d252d;
+	--bdm-surface-3:#25313b;
+	--bdm-border:#384653;
+	--bdm-border-soft:#2a3540;
+	--bdm-text:#e6edf3;
+	--bdm-muted:#9eabb7;
+	--bdm-link:#70b7ed;
+	--bdm-link-hover:#9bd2fa;
+	--bdm-primary:#3f78a7;
+	--bdm-input:#11171d;
+	--bdm-shadow:rgba(0,0,0,.42);
+}
+
+html[data-better-dark-mode="dark"],
+html[data-better-dark-mode="dark"] body {
+	background:var(--bdm-bg)!important;
+	color:var(--bdm-text)!important;
+}
+
+html[data-better-dark-mode="dark"] a,
+html[data-better-dark-mode="dark"] a:link,
+html[data-better-dark-mode="dark"] a:visited {color:var(--bdm-link)!important}
+html[data-better-dark-mode="dark"] a:hover,
+html[data-better-dark-mode="dark"] a:focus,
+html[data-better-dark-mode="dark"] a:active {color:var(--bdm-link-hover)!important}
+
+html[data-better-dark-mode="dark"] .smalltext,
+html[data-better-dark-mode="dark"] .description,
+html[data-better-dark-mode="dark"] .board_description,
+html[data-better-dark-mode="dark"] .moderation_link {color:var(--bdm-muted)!important}
+
+html[data-better-dark-mode="dark"] #wrapper,
+html[data-better-dark-mode="dark"] #content_section,
+html[data-better-dark-mode="dark"] #main_content_section,
+html[data-better-dark-mode="dark"] .roundframe,
+html[data-better-dark-mode="dark"] .roundframe2,
+html[data-better-dark-mode="dark"] .information,
+html[data-better-dark-mode="dark"] .windowbg,
+html[data-better-dark-mode="dark"] .generic_list_wrapper,
+html[data-better-dark-mode="dark"] .main_container {
+	background:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+	box-shadow:none!important;
+}
+
+html[data-better-dark-mode="dark"] .windowbg:nth-of-type(even),
+html[data-better-dark-mode="dark"] .windowbg2,
+html[data-better-dark-mode="dark"] .alternate {background:var(--bdm-surface-2)!important}
+
+html[data-better-dark-mode="dark"] #top_section,
+html[data-better-dark-mode="dark"] #header,
+html[data-better-dark-mode="dark"] #upper_section {
+	background-color:#121920!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] #profile_menu,
+html[data-better-dark-mode="dark"] #pm_menu,
+html[data-better-dark-mode="dark"] #alerts_menu,
+html[data-better-dark-mode="dark"] .top_menu {
+	background:var(--bdm-surface-2)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+	box-shadow:0 10px 28px var(--bdm-shadow)!important;
+}
+
+html[data-better-dark-mode="dark"] .dropmenu li ul,
+html[data-better-dark-mode="dark"] .dropmenu li li,
+html[data-better-dark-mode="dark"] .menu_nav li ul {
+	background:var(--bdm-surface-2)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .dropmenu li a,
+html[data-better-dark-mode="dark"] .menu_nav li a,
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li a {
+	color:var(--bdm-text)!important;
+}
+
+html[data-better-dark-mode="dark"] .navigate_section,
+html[data-better-dark-mode="dark"] .navigate_section ul {
+	background:var(--bdm-surface)!important;
+	color:var(--bdm-muted)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .cat_bar,
+html[data-better-dark-mode="dark"] .title_bar {
+	background:linear-gradient(#416f93,#2d5575)!important;
+	color:#fff!important;
+	border-color:#527b9b!important;
+}
+html[data-better-dark-mode="dark"] .sub_bar {
+	background:linear-gradient(#2a3540,#202932)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+html[data-better-dark-mode="dark"] .cat_bar h3,
+html[data-better-dark-mode="dark"] .title_bar h3,
+html[data-better-dark-mode="dark"] .cat_bar a,
+html[data-better-dark-mode="dark"] .title_bar a {color:#fff!important}
+
+html[data-better-dark-mode="dark"] .boardindex_table .windowbg,
+html[data-better-dark-mode="dark"] #messageindex .windowbg,
+html[data-better-dark-mode="dark"] #topic_container .windowbg,
+html[data-better-dark-mode="dark"] .topic_table .windowbg {
+	background:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border-soft)!important;
+}
+
+html[data-better-dark-mode="dark"] .board_stats,
+html[data-better-dark-mode="dark"] .lastpost,
+html[data-better-dark-mode="dark"] .lastpost p {color:var(--bdm-muted)!important}
+
+html[data-better-dark-mode="dark"] .post_wrapper,
+html[data-better-dark-mode="dark"] .postarea,
+html[data-better-dark-mode="dark"] .poster,
+html[data-better-dark-mode="dark"] .post,
+html[data-better-dark-mode="dark"] .postbody,
+html[data-better-dark-mode="dark"] .attachments,
+html[data-better-dark-mode="dark"] .signature {
+	background-color:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] blockquote,
+html[data-better-dark-mode="dark"] .bbc_code,
+html[data-better-dark-mode="dark"] .codeheader {
+	background:#0c1116!important;
+	color:#dbe7f0!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] input,
+html[data-better-dark-mode="dark"] textarea,
+html[data-better-dark-mode="dark"] select {
+	background:var(--bdm-input)!important;
+	color:var(--bdm-text)!important;
+	border-color:#4a5967!important;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.35)!important;
+}
+html[data-better-dark-mode="dark"] input::placeholder,
+html[data-better-dark-mode="dark"] textarea::placeholder {color:#7f8d99!important;opacity:1}
+
+html[data-better-dark-mode="dark"] fieldset,
+html[data-better-dark-mode="dark"] legend {
+	background:transparent!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .button,
+html[data-better-dark-mode="dark"] .button_submit,
+html[data-better-dark-mode="dark"] input[type="submit"],
+html[data-better-dark-mode="dark"] button:not(.better-dark-mode-toggle) {
+	background:linear-gradient(#3a4753,#293640)!important;
+	color:#f3f7fa!important;
+	border-color:#536372!important;
+	text-shadow:none!important;
+	box-shadow:0 1px 2px rgba(0,0,0,.35)!important;
+}
+html[data-better-dark-mode="dark"] .button:hover,
+html[data-better-dark-mode="dark"] .button_submit:hover,
+html[data-better-dark-mode="dark"] input[type="submit"]:hover,
+html[data-better-dark-mode="dark"] button:not(.better-dark-mode-toggle):hover {
+	background:linear-gradient(#497798,#315b79)!important;
+	color:#fff!important;
+	border-color:#5b8aaa!important;
+}
+
+html[data-better-dark-mode="dark"] table,
+html[data-better-dark-mode="dark"] td,
+html[data-better-dark-mode="dark"] th {border-color:var(--bdm-border)!important}
+
+html[data-better-dark-mode="dark"] table.table_grid td,
+html[data-better-dark-mode="dark"] table.table_grid th {
+	background-color:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+}
+
+html[data-better-dark-mode="dark"] .pagelinks a,
+html[data-better-dark-mode="dark"] .pagelinks span,
+html[data-better-dark-mode="dark"] .pages a,
+html[data-better-dark-mode="dark"] .pages span {
+	background:var(--bdm-surface-2)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .popup_container .popup_window,
+html[data-better-dark-mode="dark"] #smf_popup .popup_window,
+html[data-better-dark-mode="dark"] .popup_content {
+	background:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+html[data-better-dark-mode="dark"] .popup_heading {
+	background:linear-gradient(#3d6c90,#294f6d)!important;
+	color:#fff!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .sceditor-container,
+html[data-better-dark-mode="dark"] .sceditor-toolbar,
+html[data-better-dark-mode="dark"] .sceditor-group {
+	background:var(--bdm-surface-2)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] #footer {
+	background:#11181e!important;
+	color:var(--bdm-muted)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+.better-dark-mode-toggle {
+	position:fixed;
+	right:18px;
+	bottom:18px;
+	z-index:29990;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:42px;
+	height:42px;
+	margin:0;
+	padding:0;
+	border:1px solid rgba(120,145,165,.6);
+	border-radius:999px;
+	background:rgba(23,29,35,.94);
+	color:#f4f7fa;
+	box-shadow:0 5px 18px rgba(0,0,0,.32);
+	cursor:pointer;
+}
+.better-dark-mode-toggle:hover,
+.better-dark-mode-toggle:focus {background:#315b79;border-color:#70a4ca;outline:none}
+
+html[data-better-dark-mode="light"] .better-dark-mode-icon {
+	width:16px;height:16px;border-radius:50%;background:#2d3f4d;
+}
+html[data-better-dark-mode="dark"] .better-dark-mode-icon {
+	width:16px;height:16px;border-radius:50%;background:#ffd15c;box-shadow:0 0 8px rgba(255,209,92,.45);
+}
+@media(max-width:720px){
+	.better-dark-mode-toggle{right:12px;bottom:12px;width:40px;height:40px}
+}
+
+/* 0.1.0-test2 — Curve2 top/header coverage and native utility-bar toggle. */
+html[data-better-dark-mode="dark"] #top_section,
+html[data-better-dark-mode="dark"] #top_section .inner_wrap,
+html[data-better-dark-mode="dark"] #upper_section,
+html[data-better-dark-mode="dark"] #upper_section #inner_section,
+html[data-better-dark-mode="dark"] #upper_section #inner_wrap,
+html[data-better-dark-mode="dark"] #upper_section .user,
+html[data-better-dark-mode="dark"] #upper_section .news,
+html[data-better-dark-mode="dark"] #upper_section .news p,
+html[data-better-dark-mode="dark"] #upper_section .news h2,
+html[data-better-dark-mode="dark"] #main_menu,
+html[data-better-dark-mode="dark"] #main_menu .popup_window,
+html[data-better-dark-mode="dark"] #main_menu .popup_heading,
+html[data-better-dark-mode="dark"] .navigate_section,
+html[data-better-dark-mode="dark"] .navigate_section ul,
+html[data-better-dark-mode="dark"] .navigate_section li {
+	background-color:var(--bdm-surface)!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] #upper_section #inner_wrap {
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] #upper_section .news,
+html[data-better-dark-mode="dark"] #upper_section .user,
+html[data-better-dark-mode="dark"] #upper_section .unread_links,
+html[data-better-dark-mode="dark"] #upper_section .unread_links li {
+	color:var(--bdm-muted)!important;
+}
+
+html[data-better-dark-mode="dark"] #upper_section .news a,
+html[data-better-dark-mode="dark"] #upper_section .unread_links a {
+	color:var(--bdm-link)!important;
+}
+
+html[data-better-dark-mode="dark"] #top_info,
+html[data-better-dark-mode="dark"] #top_info > li,
+html[data-better-dark-mode="dark"] #top_info > li > a {
+	background-color:transparent!important;
+	color:var(--bdm-text)!important;
+	border-color:transparent!important;
+}
+
+html[data-better-dark-mode="dark"] #search_form,
+html[data-better-dark-mode="dark"] #search_form input,
+html[data-better-dark-mode="dark"] #search_form select,
+html[data-better-dark-mode="dark"] #search_form .button {
+	background-color:var(--bdm-input)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+/* Curve2 navigation buttons should not retain pale/light-state fills. */
+html[data-better-dark-mode="dark"] #main_menu .dropmenu > li > a,
+html[data-better-dark-mode="dark"] #main_menu .menu_nav > li > a {
+	background-color:transparent!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	border-color:transparent!important;
+}
+html[data-better-dark-mode="dark"] #main_menu .dropmenu > li:hover > a,
+html[data-better-dark-mode="dark"] #main_menu .dropmenu > li > a:focus,
+html[data-better-dark-mode="dark"] #main_menu .menu_nav > li:hover > a {
+	background-color:var(--bdm-surface-3)!important;
+	color:var(--bdm-link-hover)!important;
+	border-color:var(--bdm-border)!important;
+}
+html[data-better-dark-mode="dark"] #main_menu .dropmenu > li > a.active,
+html[data-better-dark-mode="dark"] #main_menu .menu_nav > li > a.active {
+	background:linear-gradient(#3f78a7,#2f5e84)!important;
+	color:#fff!important;
+	border-color:#5a8bb1!important;
+}
+
+/* Make common light Curve2 surfaces dark even when nested in portal/custom pages. */
+html[data-better-dark-mode="dark"] .windowbg,
+html[data-better-dark-mode="dark"] .windowbg2,
+html[data-better-dark-mode="dark"] .windowbg3,
+html[data-better-dark-mode="dark"] .roundframe,
+html[data-better-dark-mode="dark"] .roundframe2,
+html[data-better-dark-mode="dark"] .information,
+html[data-better-dark-mode="dark"] .generic_list_wrapper,
+html[data-better-dark-mode="dark"] .main_container,
+html[data-better-dark-mode="dark"] .content,
+html[data-better-dark-mode="dark"] .list_posts,
+html[data-better-dark-mode="dark"] .post_wrapper,
+html[data-better-dark-mode="dark"] .postarea,
+html[data-better-dark-mode="dark"] .poster {
+	background-color:var(--bdm-surface)!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+/* Header-bar toggle: compact, native-looking, and never collides with Better Chat. */
+.better-dark-mode-toggle {
+	position:static!important;
+	float:right;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:28px;
+	height:28px;
+	margin:2px 0 0 8px;
+	padding:0;
+	border:1px solid #7f98aa;
+	border-radius:50%;
+	background:#1b252d;
+	color:#f4f7fa;
+	box-shadow:none;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.better-dark-mode-toggle:hover,
+.better-dark-mode-toggle:focus {
+	background:#315b79;
+	border-color:#8db8d8;
+	outline:none;
+}
+html[data-better-dark-mode="light"] .better-dark-mode-toggle {
+	background:#edf2f5;
+	border-color:#9aabb8;
+}
+html[data-better-dark-mode="light"] .better-dark-mode-icon {
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	background:#263846;
+}
+html[data-better-dark-mode="dark"] .better-dark-mode-icon {
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	background:#ffd15c;
+	box-shadow:0 0 7px rgba(255,209,92,.4);
+}
+@media(max-width:560px){
+	.better-dark-mode-toggle{
+		float:right;
+		width:27px;
+		height:27px;
+		margin:2px 4px 0 6px;
+	}
+}
+
+/* 0.1.0-test3 — Curve2 BoardIndex row authority.
+ * Curve2 gives .up_contain its own white gradient, independent of .windowbg.
+ * Own that component directly in dark mode. */
+html[data-better-dark-mode="dark"] #boardindex_table .up_contain,
+html[data-better-dark-mode="dark"] .boardindex_table .up_contain,
+html[data-better-dark-mode="dark"] .up_contain {
+	background:var(--bdm-surface)!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] #boardindex_table .up_contain:nth-child(even),
+html[data-better-dark-mode="dark"] .boardindex_table .up_contain:nth-child(even) {
+	background:var(--bdm-surface-2)!important;
+	background-image:none!important;
+}
+
+html[data-better-dark-mode="dark"] .up_contain .board_icon,
+html[data-better-dark-mode="dark"] .up_contain .info,
+html[data-better-dark-mode="dark"] .up_contain .board_stats,
+html[data-better-dark-mode="dark"] .up_contain .lastpost,
+html[data-better-dark-mode="dark"] .up_contain .children {
+	background:transparent!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .up_contain .board_stats p {
+	border-color:var(--bdm-border)!important;
+}
+
+html[data-better-dark-mode="dark"] .up_contain .board_description,
+html[data-better-dark-mode="dark"] .up_contain .board_stats,
+html[data-better-dark-mode="dark"] .up_contain .lastpost,
+html[data-better-dark-mode="dark"] .up_contain .lastpost p {
+	color:var(--bdm-muted)!important;
+}
+
+/* The toggle now lives at the start of #top_section .inner_wrap.
+ * Keep it aligned with Curve2's right-side search controls. */
+#top_section .inner_wrap > .better-dark-mode-toggle {
+	float:right!important;
+	position:relative!important;
+	z-index:120!important;
+	margin:2px 6px 0 8px!important;
+}
+
+
+
+/* 0.1.0-test4 — Header toggle polish: lower/right placement + sun/moon states. */
+#top_section .inner_wrap > .better-dark-mode-toggle {
+	float:right!important;
+	position:relative!important;
+	z-index:120!important;
+	width:28px!important;
+	height:28px!important;
+	margin:5px 2px 0 10px!important;
+	padding:0!important;
+	border:1px solid rgba(125,150,168,.75)!important;
+	border-radius:50%!important;
+	background:rgba(20,29,36,.92)!important;
+	color:#f3f7fa!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.06)!important;
+	line-height:1!important;
+}
+
+#top_section .inner_wrap > .better-dark-mode-toggle:hover,
+#top_section .inner_wrap > .better-dark-mode-toggle:focus {
+	background:#315b79!important;
+	border-color:#8db8d8!important;
+	outline:none!important;
+}
+
+.better-dark-mode-icon {
+	display:block!important;
+	width:15px!important;
+	height:15px!important;
+	background-color:currentColor!important;
+	box-shadow:none!important;
+	border-radius:0!important;
+}
+
+/* Light mode shows a sun: clicking it takes the visitor to dark mode. */
+html[data-better-dark-mode="light"] .better-dark-mode-toggle {
+	background:#edf2f5!important;
+	color:#2c4353!important;
+	border-color:#9cabb6!important;
+}
+html[data-better-dark-mode="light"] .better-dark-mode-icon {
+	-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 6.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM12 1h1v3h-2V1h1Zm0 19h1v3h-2v-3h1ZM1 11h3v2H1v-2Zm19 0h3v2h-3v-2ZM4.22 3.51l2.12 2.12-1.41 1.42L2.8 4.92l1.42-1.41Zm13.44 13.44 2.12 2.12-1.42 1.41-2.12-2.12 1.42-1.41Zm1.7-13.44 1.42 1.41-2.12 2.13-1.42-1.42 2.12-2.12ZM5.64 16.95l1.41 1.41-2.12 2.12-1.42-1.41 2.13-2.12Z'/%3E%3C/svg%3E") center/contain no-repeat!important;
+	mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 6.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM12 1h1v3h-2V1h1Zm0 19h1v3h-2v-3h1ZM1 11h3v2H1v-2Zm19 0h3v2h-3v-2ZM4.22 3.51l2.12 2.12-1.41 1.42L2.8 4.92l1.42-1.41Zm13.44 13.44 2.12 2.12-1.42 1.41-2.12-2.12 1.42-1.41Zm1.7-13.44 1.42 1.41-2.12 2.13-1.42-1.42 2.12-2.12ZM5.64 16.95l1.41 1.41-2.12 2.12-1.42-1.41 2.13-2.12Z'/%3E%3C/svg%3E") center/contain no-repeat!important;
+}
+
+/* Dark mode shows a moon: clicking it takes the visitor back to light mode. */
+html[data-better-dark-mode="dark"] .better-dark-mode-toggle {
+	background:#162028!important;
+	color:#ffd66b!important;
+	border-color:#526572!important;
+}
+html[data-better-dark-mode="dark"] .better-dark-mode-icon {
+	-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.6 15.6A8.7 8.7 0 0 1 8.4 3.4 9 9 0 1 0 20.6 15.6Z'/%3E%3C/svg%3E") center/contain no-repeat!important;
+	mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.6 15.6A8.7 8.7 0 0 1 8.4 3.4 9 9 0 1 0 20.6 15.6Z'/%3E%3C/svg%3E") center/contain no-repeat!important;
+}
+
+@media(max-width:560px){
+	#top_section .inner_wrap > .better-dark-mode-toggle{
+		width:27px!important;
+		height:27px!important;
+		margin:5px 2px 0 8px!important;
+	}
+	.better-dark-mode-icon{
+		width:14px!important;
+		height:14px!important;
+	}
+}
+
+/* 0.1.0-test5 — unify active Admin/generic tabs with Curve2's main-menu selected state.
+ * Keep orange as an accent, not as a second navigation language. */
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.active,
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.chosen,
+html[data-better-dark-mode="dark"] #adm_submenus .generic_menu > .dropmenu > li > a.active,
+html[data-better-dark-mode="dark"] #adm_submenus .generic_menu > .dropmenu > li > a.chosen,
+html[data-better-dark-mode="dark"] .menu_nav > li > a.active,
+html[data-better-dark-mode="dark"] .menu_nav > li > a.chosen {
+	background:linear-gradient(#4b7da4,#315f83)!important;
+	background-image:linear-gradient(#4b7da4,#315f83)!important;
+	color:#fff!important;
+	-webkit-text-fill-color:#fff!important;
+	border:1px solid #5a86a8!important;
+	border-radius:4px!important;
+	font-weight:700!important;
+	text-shadow:0 1px 1px rgba(0,0,0,.45)!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.12)!important;
+}
+
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.active:hover,
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.active:focus,
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.chosen:hover,
+html[data-better-dark-mode="dark"] .generic_menu > .dropmenu > li > a.chosen:focus,
+html[data-better-dark-mode="dark"] #adm_submenus .generic_menu > .dropmenu > li > a.active:hover,
+html[data-better-dark-mode="dark"] #adm_submenus .generic_menu > .dropmenu > li > a.chosen:hover,
+html[data-better-dark-mode="dark"] .menu_nav > li > a.active:hover,
+html[data-better-dark-mode="dark"] .menu_nav > li > a.active:focus {
+	background:linear-gradient(#5a8eb7,#396b91)!important;
+	background-image:linear-gradient(#5a8eb7,#396b91)!important;
+	color:#fff!important;
+	-webkit-text-fill-color:#fff!important;
+	border-color:#6e9abc!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.16)!important;
+	text-shadow:0 1px 1px rgba(0,0,0,.45)!important;
+}
+
+/* Nested chosen items should read as selected without becoming orange pills. */
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li li > a.chosen,
+html[data-better-dark-mode="dark"] #adm_submenus .dropmenu li li > a.chosen {
+	background:var(--bdm-surface-3)!important;
+	background-image:none!important;
+	color:var(--bdm-link-hover)!important;
+	-webkit-text-fill-color:var(--bdm-link-hover)!important;
+	border-color:var(--bdm-border)!important;
+	font-weight:700!important;
+	text-shadow:none!important;
+}
+
+
+/* 0.1.0a — Better Gallery button contrast authority.
+ * Better Gallery intentionally defers button palette to the active theme, but
+ * its final Theme Lab compatibility rule falls back to #444 when Theme Lab
+ * variables are absent. In Better Dark Mode that becomes dark-on-dark.
+ * Own Gallery toolbar/action button states explicitly in dark mode. */
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button:link,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button:visited,
+html[data-better-dark-mode="dark"] .bg_album_actions > a.button,
+html[data-better-dark-mode="dark"] .bg_album_actions > a.button:link,
+html[data-better-dark-mode="dark"] .bg_album_actions > a.button:visited,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar .button,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar a.button:link,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar a.button:visited {
+	background:linear-gradient(#34434f,#26343e)!important;
+	background-image:linear-gradient(#34434f,#26343e)!important;
+	color:#f1f6fa!important;
+	-webkit-text-fill-color:#f1f6fa!important;
+	border:1px solid #536977!important;
+	text-shadow:none!important;
+	text-decoration:none!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important;
+	opacity:1!important;
+}
+
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button:hover,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button:focus,
+html[data-better-dark-mode="dark"] .bg_album_actions > a.button:hover,
+html[data-better-dark-mode="dark"] .bg_album_actions > a.button:focus,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar .button:hover,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar .button:focus {
+	background:linear-gradient(#497b9d,#315d7b)!important;
+	background-image:linear-gradient(#497b9d,#315d7b)!important;
+	color:#fff!important;
+	-webkit-text-fill-color:#fff!important;
+	border-color:#6594b4!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.14)!important;
+	opacity:1!important;
+}
+
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button.active,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button.active:link,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button.active:visited,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button.active:hover,
+html[data-better-dark-mode="dark"] .bg_media_action_list > a.button.active:focus,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar .button.active,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar a.button.active:visited {
+	background:linear-gradient(#4d83ad,#33678f)!important;
+	background-image:linear-gradient(#4d83ad,#33678f)!important;
+	color:#fff!important;
+	-webkit-text-fill-color:#fff!important;
+	border-color:#6c9dbf!important;
+	font-weight:700!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.16)!important;
+}
+
+/* Genuine disabled controls remain visibly disabled, but still legible. */
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar .button:disabled,
+html[data-better-dark-mode="dark"] .bg_gallery_toolbar button[disabled],
+html[data-better-dark-mode="dark"] .bg_media_action_list .button:disabled,
+html[data-better-dark-mode="dark"] .bg_album_actions .button:disabled {
+	background:#202a31!important;
+	background-image:none!important;
+	color:#8998a3!important;
+	-webkit-text-fill-color:#8998a3!important;
+	border-color:#394953!important;
+	opacity:.72!important;
+	box-shadow:none!important;
+}
