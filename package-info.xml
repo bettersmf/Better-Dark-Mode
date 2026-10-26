@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "https://www.simplemachines.org/xml/package-info">
+<package-info xmlns="https://www.simplemachines.org/xml/package-info" xmlns:smf="https://www.simplemachines.org/">
+	<id>bettersmf:better-dark-mode</id>
+	<name>Better Dark Mode</name>
+	<version>0.1.0d</version>
+	<type>modification</type>
+
+	<install for="2.1 - 2.1.99">
+		<require-file name="Sources/BetterDarkMode.php" destination="$sourcedir" />
+		<require-file name="Themes/default/css/better_dark_mode.css" destination="$themes_dir/default/css" />
+		<require-file name="Themes/default/scripts/better_dark_mode.js" destination="$themes_dir/default/scripts" />
+		<require-file name="Themes/default/languages/BetterDarkMode.english.php" destination="$themes_dir/default/languages" />
+		<require-file name="Themes/default/images/admin/better_dark_mode.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_dark_mode.png" destination="$themes_dir/default/images/admin/big" />
+		<code>better_dark_mode_install.php</code>
+	</install>
+
+	<upgrade from="0.1.0-test1,0.1.0-test2,0.1.0-test3,0.1.0-test4,0.1.0-test5,0.1.0,0.1.0a,0.1.0b,0.1.0c" for="2.1 - 2.1.99">
+		<require-file name="Sources/BetterDarkMode.php" destination="$sourcedir" />
+		<require-file name="Themes/default/css/better_dark_mode.css" destination="$themes_dir/default/css" />
+		<require-file name="Themes/default/scripts/better_dark_mode.js" destination="$themes_dir/default/scripts" />
+		<require-file name="Themes/default/languages/BetterDarkMode.english.php" destination="$themes_dir/default/languages" />
+		<require-file name="Themes/default/images/admin/better_dark_mode.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_dark_mode.png" destination="$themes_dir/default/images/admin/big" />
+		<code>better_dark_mode_install.php</code>
+	</upgrade>
+
+	<uninstall for="2.1 - 2.1.99">
+		<code>better_dark_mode_uninstall.php</code>
+		<remove-file name="$sourcedir/BetterDarkMode.php" />
+		<remove-file name="$themes_dir/default/css/better_dark_mode.css" />
+		<remove-file name="$themes_dir/default/scripts/better_dark_mode.js" />
+		<remove-file name="$themes_dir/default/languages/BetterDarkMode.english.php" />
+		<remove-file name="$themes_dir/default/images/admin/better_dark_mode.png" />
+		<remove-file name="$themes_dir/default/images/admin/big/better_dark_mode.png" />
+	</uninstall>
+</package-info>
