@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0e
+
+- Darkened SMF error, warning, and info boxes while preserving clear semantic colors.
+- Fixed nested dropdown/menu hover states that flashed pale/white and made text unreadable.
+- Added explicit dark-mode surfaces and hover states for topic/reply quick-action buttons including Quote, Quick Edit, and More.
+- Darkened quick-action flyout menus and their hover states.
+- Added direct upgrade support from 0.1.0d.
+
 ## 0.1.0d
 
 - Fixed SMF GenericMenu tab-context warnings in the Better Dark Mode administration area.
