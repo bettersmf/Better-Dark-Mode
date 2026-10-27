@@ -637,3 +637,170 @@ html[data-better-dark-mode="dark"] .bg_album_actions .button:disabled {
 	opacity:.72!important;
 	box-shadow:none!important;
 }
+
+/* 0.1.0e — dark-state contrast polish for errors, dropdown hovers, and topic actions. */
+html[data-better-dark-mode="dark"] {
+	--bdm-error-bg:#2a171b;
+	--bdm-error-border:#b94a59;
+	--bdm-error-text:#ffdce1;
+	--bdm-warning-bg:#2a2415;
+	--bdm-warning-border:#b99a45;
+	--bdm-warning-text:#fff0b8;
+	--bdm-info-bg:#17261d;
+	--bdm-info-border:#4f8a62;
+	--bdm-info-text:#d9f6e2;
+}
+
+/* Stock SMF status boxes: keep semantic color without blasting a light surface. */
+html[data-better-dark-mode="dark"] .errorbox,
+html[data-better-dark-mode="dark"] #fatal_error .errorbox {
+	background:var(--bdm-error-bg)!important;
+	background-image:none!important;
+	color:var(--bdm-error-text)!important;
+	border-top-color:var(--bdm-error-border)!important;
+	border-bottom-color:var(--bdm-error-border)!important;
+	box-shadow:inset 0 0 0 1px rgba(185,74,89,.18)!important;
+}
+html[data-better-dark-mode="dark"] .errorbox h3,
+html[data-better-dark-mode="dark"] .errorbox p,
+html[data-better-dark-mode="dark"] .errorbox span,
+html[data-better-dark-mode="dark"] .errorbox strong,
+html[data-better-dark-mode="dark"] .errorbox em,
+html[data-better-dark-mode="dark"] .errorbox li {
+	color:var(--bdm-error-text)!important;
+}
+html[data-better-dark-mode="dark"] .errorbox a {
+	color:#ff9daa!important;
+}
+html[data-better-dark-mode="dark"] .errorbox a:hover,
+html[data-better-dark-mode="dark"] .errorbox a:focus {
+	color:#ffc1c9!important;
+}
+
+html[data-better-dark-mode="dark"] .noticebox {
+	background:var(--bdm-warning-bg)!important;
+	background-image:none!important;
+	color:var(--bdm-warning-text)!important;
+	border-top-color:var(--bdm-warning-border)!important;
+	border-bottom-color:var(--bdm-warning-border)!important;
+}
+html[data-better-dark-mode="dark"] .noticebox a { color:#ffd978!important; }
+
+html[data-better-dark-mode="dark"] .infobox {
+	background:var(--bdm-info-bg)!important;
+	background-image:none!important;
+	color:var(--bdm-info-text)!important;
+	border-top-color:var(--bdm-info-border)!important;
+	border-bottom-color:var(--bdm-info-border)!important;
+}
+html[data-better-dark-mode="dark"] .infobox a { color:#9fe1b3!important; }
+
+/* Package Manager / validation tables sometimes paint failure cells directly. */
+html[data-better-dark-mode="dark"] .error,
+html[data-better-dark-mode="dark"] .alert,
+html[data-better-dark-mode="dark"] .package_error,
+html[data-better-dark-mode="dark"] .package_error strong,
+html[data-better-dark-mode="dark"] .package_error span {
+	color:#ff8f9f!important;
+}
+
+/* Nested SMF menus: never let Curve's light hover treatment flash white. */
+html[data-better-dark-mode="dark"] .dropmenu li ul,
+html[data-better-dark-mode="dark"] .dropmenu li ul ul,
+html[data-better-dark-mode="dark"] .top_menu,
+html[data-better-dark-mode="dark"] .menu_nav li ul {
+	background:var(--bdm-surface-2)!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	border-color:var(--bdm-border)!important;
+}
+html[data-better-dark-mode="dark"] .dropmenu li:hover li > a,
+html[data-better-dark-mode="dark"] .dropmenu li li > a,
+html[data-better-dark-mode="dark"] .menu_nav li li > a,
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li li > a {
+	background:transparent!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	-webkit-text-fill-color:var(--bdm-text)!important;
+	border-color:transparent!important;
+	box-shadow:none!important;
+	text-shadow:none!important;
+}
+html[data-better-dark-mode="dark"] .dropmenu li li:hover > a,
+html[data-better-dark-mode="dark"] .dropmenu li li > a:hover,
+html[data-better-dark-mode="dark"] .dropmenu li li > a:focus,
+html[data-better-dark-mode="dark"] .menu_nav li li:hover > a,
+html[data-better-dark-mode="dark"] .menu_nav li li > a:hover,
+html[data-better-dark-mode="dark"] .menu_nav li li > a:focus,
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li li:hover > a,
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li li > a:hover,
+html[data-better-dark-mode="dark"] .generic_menu .dropmenu li li > a:focus {
+	background:var(--bdm-surface-3)!important;
+	background-image:none!important;
+	color:var(--bdm-link-hover)!important;
+	-webkit-text-fill-color:var(--bdm-link-hover)!important;
+	border:1px solid #4c6070!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.05)!important;
+	text-decoration:none!important;
+}
+
+/* Topic/reply action controls: Quote, Quick Edit, More, inline mod, etc. */
+html[data-better-dark-mode="dark"] .quickbuttons > li > a,
+html[data-better-dark-mode="dark"] .quickbuttons > li > a:link,
+html[data-better-dark-mode="dark"] .quickbuttons > li > a:visited,
+html[data-better-dark-mode="dark"] .inline_mod_check,
+html[data-better-dark-mode="dark"] .buttonlist .button,
+html[data-better-dark-mode="dark"] .buttonrow .button {
+	background:linear-gradient(#34434f,#26343e)!important;
+	background-image:linear-gradient(#34434f,#26343e)!important;
+	color:#f1f6fa!important;
+	-webkit-text-fill-color:#f1f6fa!important;
+	border-color:#536977!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.07)!important;
+	text-shadow:none!important;
+}
+html[data-better-dark-mode="dark"] .quickbuttons > li:hover > a,
+html[data-better-dark-mode="dark"] .quickbuttons > li > a:hover,
+html[data-better-dark-mode="dark"] .quickbuttons > li > a:focus,
+html[data-better-dark-mode="dark"] .inline_mod_check:hover,
+html[data-better-dark-mode="dark"] .inline_mod_check:focus,
+html[data-better-dark-mode="dark"] .buttonlist .button:hover,
+html[data-better-dark-mode="dark"] .buttonlist .button:focus,
+html[data-better-dark-mode="dark"] .buttonrow .button:hover,
+html[data-better-dark-mode="dark"] .buttonrow .button:focus {
+	background:linear-gradient(#497b9d,#315d7b)!important;
+	background-image:linear-gradient(#497b9d,#315d7b)!important;
+	color:#fff!important;
+	-webkit-text-fill-color:#fff!important;
+	border-color:#6594b4!important;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.12)!important;
+}
+
+/* The More... flyout under topic quickbuttons is also a .dropmenu-style list in Curve. */
+html[data-better-dark-mode="dark"] .quickbuttons ul,
+html[data-better-dark-mode="dark"] .quickbuttons li ul {
+	background:var(--bdm-surface-2)!important;
+	background-image:none!important;
+	border-color:var(--bdm-border)!important;
+	box-shadow:0 10px 24px var(--bdm-shadow)!important;
+}
+html[data-better-dark-mode="dark"] .quickbuttons li li > a,
+html[data-better-dark-mode="dark"] .quickbuttons li li > a:link,
+html[data-better-dark-mode="dark"] .quickbuttons li li > a:visited {
+	background:transparent!important;
+	background-image:none!important;
+	color:var(--bdm-text)!important;
+	-webkit-text-fill-color:var(--bdm-text)!important;
+	border-color:transparent!important;
+	box-shadow:none!important;
+}
+html[data-better-dark-mode="dark"] .quickbuttons li li:hover > a,
+html[data-better-dark-mode="dark"] .quickbuttons li li > a:hover,
+html[data-better-dark-mode="dark"] .quickbuttons li li > a:focus {
+	background:var(--bdm-surface-3)!important;
+	background-image:none!important;
+	color:var(--bdm-link-hover)!important;
+	-webkit-text-fill-color:var(--bdm-link-hover)!important;
+	border-color:#4c6070!important;
+	box-shadow:none!important;
+}
