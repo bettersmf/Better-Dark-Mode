@@ -804,3 +804,24 @@ html[data-better-dark-mode="dark"] .quickbuttons li li > a:focus {
 	border-color:#4c6070!important;
 	box-shadow:none!important;
 }
+
+/* 0.1.0f — topic/reply shell spacing polish.
+ * Keep the darker post surface, but stop poster/user info from riding the edge. */
+html[data-better-dark-mode="dark"] #forumposts .windowbg,
+html[data-better-dark-mode="dark"] #forumposts .windowbg2 {
+	border-radius:8px!important;
+	overflow:hidden!important;
+}
+
+html[data-better-dark-mode="dark"] #forumposts .windowbg .post_wrapper,
+html[data-better-dark-mode="dark"] #forumposts .windowbg2 .post_wrapper {
+	padding:10px 12px!important;
+	box-sizing:border-box!important;
+}
+
+@media(max-width:720px){
+	html[data-better-dark-mode="dark"] #forumposts .windowbg .post_wrapper,
+	html[data-better-dark-mode="dark"] #forumposts .windowbg2 .post_wrapper {
+		padding:8px 9px!important;
+	}
+}
