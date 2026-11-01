@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0f
+
+- Added an 8px radius to topic/reply post shells in dark mode.
+- Added 10px × 12px post-wrapper padding so poster/user-info content no longer sits against the edge.
+- Added tighter mobile post-wrapper padding below 720px.
+- Scoped the change to `#forumposts` so unrelated dark-mode surfaces are unaffected.
+- Added direct upgrade support from 0.1.0e.
+
 ## 0.1.0e
 
 - Darkened SMF error, warning, and info boxes while preserving clear semantic colors.
