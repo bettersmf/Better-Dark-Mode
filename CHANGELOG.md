@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0g
+
+- Fixed the reply border-radius not being visually applied in 0.1.0f.
+- Applied the 8px radius directly to the visible `.post_wrapper` shell.
+- Clipped inner poster/postarea backgrounds inside the rounded shell.
+- Preserved the working reply padding from 0.1.0f.
+- Added direct upgrade support from 0.1.0f.
+
 ## 0.1.0f
 
 - Added an 8px radius to topic/reply post shells in dark mode.
