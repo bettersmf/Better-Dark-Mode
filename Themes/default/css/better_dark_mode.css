@@ -817,6 +817,15 @@ html[data-better-dark-mode="dark"] #forumposts .windowbg .post_wrapper,
 html[data-better-dark-mode="dark"] #forumposts .windowbg2 .post_wrapper {
 	padding:10px 12px!important;
 	box-sizing:border-box!important;
+	border-radius:8px!important;
+	overflow:hidden!important;
+}
+
+html[data-better-dark-mode="dark"] #forumposts .windowbg .poster,
+html[data-better-dark-mode="dark"] #forumposts .windowbg .postarea,
+html[data-better-dark-mode="dark"] #forumposts .windowbg2 .poster,
+html[data-better-dark-mode="dark"] #forumposts .windowbg2 .postarea {
+	border-radius:0!important;
 }
 
 @media(max-width:720px){
