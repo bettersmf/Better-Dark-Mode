@@ -1,3 +1,12 @@
+# Better Dark Mode 0.1.0f — Topic/Reply Shell Polish
+
+- Adds a subtle 8px radius to topic and reply post shells in dark mode.
+- Adds internal post-wrapper padding so poster/user-info content no longer rides the edge.
+- Keeps the existing darker reply background unchanged.
+- Uses slightly tighter spacing on mobile.
+- Scoped to `#forumposts`, leaving board rows, admin panels, portal blocks, and light mode untouched.
+- Adds direct upgrade support from 0.1.0e.
+
 # Better Dark Mode 0.1.0e — Contrast State Polish
 
 - Darkens SMF error, warning, and info boxes while preserving clear semantic colors.
