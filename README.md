@@ -1,3 +1,11 @@
+# Better Dark Mode 0.1.0g — Reply Radius Fix
+
+- Fixes the reply border-radius not being visually applied in 0.1.0f.
+- Applies the 8px radius directly to the visible `.post_wrapper` shell.
+- Clips inner poster/postarea backgrounds inside the rounded shell.
+- Preserves the working reply padding introduced in 0.1.0f.
+- Adds direct upgrade support from 0.1.0f.
+
 # Better Dark Mode 0.1.0f — Topic/Reply Shell Polish
 
 - Adds a subtle 8px radius to topic and reply post shells in dark mode.
