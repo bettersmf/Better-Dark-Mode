@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0h
+
+- Packaging-only corrective release.
+- Rebuilt the release as a complete install/upgrade package after the published 0.1.0g GitHub asset was found to be incomplete.
+- Includes the full 0.1.0g runtime, stylesheet, JavaScript, language file, admin icons, installer, and uninstaller.
+- Adds direct upgrade support from 0.1.0g.
+- No runtime behavior changes from 0.1.0g.
+
 ## 0.1.0g
 
 - Fixed the reply border-radius not being visually applied in 0.1.0f.
